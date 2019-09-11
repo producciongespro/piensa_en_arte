@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de usuarios</title>
+    <link rel="icon" href="../../ico.jpg" type="image/jpg">
+    <link rel="stylesheet" href= "../../css/style.css">
+    <link rel="stylesheet" href="../../vendor/bootstrap-4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendor/alertify/css/alertify.min.css">
+    <link rel="stylesheet" href="../../vendor/alertify/css/themes/default.min.css">
+    <link rel="stylesheet" href="../../css/master.css">
+
+    <script src="../../vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="../../vendor/bootstrap-4.1/js/bootstrap.min.js"></script>
+    <script src="../../vendor/alertify/alertify.min.js"></script>
+
+    <script src="js/model/model.js"></script>
+    <script src="js/views/v_sign_up.js"></script>
+    <script src="js/controller/c_sign_up.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+      <div class="navbar-header">
+        <img id="logo" class="" src="../../img/logo.png">
+
+      </div>
+      <div id="nombreSitio" class="">
+        <span >Piensa en Arte</span>
+              <img src="../../img/icono-informacion.png" style="visibility: hidden;" class="btn-lg" id="info" data-toggle="modal" data-target="#myModal">
+
+        </div>
+      </div>
+    </div>
+  </nav>
+<br>
+<div class="container2">
+  <div id="titulo" class="row">
+
+          <div class="col-sm-12">
+
+            <h2 style="text-align: center; color:#F39200;">FORMULARIO DE REGISTRO PIENSA EN ARTE</h2>
+          </div>
+
+<br>
+      <div class="col-sm-6"></div>
+ </div><br>
+    <div class="row">
+
+        <div class="col-sm-1 text-center ">
+                <br>
+                <a href="../../" title="Ir a inicio" >
+                        <img src="../../img/home.png" alt="inicio" srcset="">
+                </a>
+        </div>
+        <div class="col-sm-10">
+            <form class="ico-home" action="../../login/registro.php" method="post">
+                <div class="row">
+                    <div class="col">
+                            <div class="form-group">
+                                    <label class="textosLogin" for="txtNombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="txtNombre" placeholder="nombre" required>
+                            </div>
+                    </div>
+                    <div class="col">
+                            <div class="form-group">
+                                    <label class="textosLogin" for="txtApellido1">Primer Apellido:</label>
+                                    <input type="text" class="form-control" id="txtApellido1" placeholder="primer apellido" required>
+                            </div>
+                    </div>
+                    <div class="col">
+                            <div class="form-group">
+                                    <label class="textosLogin" for="txtApellido2">Segundo Apellido:</label>
+                                    <input type="text" class="form-control" id="txtApellido2" placeholder="segundo apellido" required>
+                            </div>
+                    </div>
+                </div>
+                <!-- <div class="form-group" id="gorupSelectorInstance">
+                </div> -->
+
+                <div class="form-group">
+                        <label class="textosLogin" for="exampleFormControlSelect1">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="txtEmail"  placeholder="nombre.apellido1.apellido2@mep.go.cr" required>
+                </div>
+                <div class="row">
+                    <div class="col">
+                            <div class="form-group">
+                                    <label class="textosLogin" for="txtPass1">Contraseña:</label>
+                                    <input type="password" class="form-control" id="txtPass1"  placeholder="Contraseña" required>
+                            </div>
+                    </div>
+                    <div class="col">
+                            <div class="form-group">
+                                    <label class="textosLogin" for="txtPass2">Reescriba la contraseña:</label>
+                                    <input type="password" class="form-control" id="txtPass2"  placeholder="Escriba nuevamente la contraseña" required>
+                            </div>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+        <div class="col-sm-1"></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                  <input  type="checkbox" class="form-check-input" id="chkTerminos">
+                  <label style="color:#f9dc38;" class="form-check-label" for="chkTerminos">Acepto los términos y condiciones que he leído para crear la cuenta.</label>
+                  <br>  <button class="btn btn-primary" disabled id="btnSignup"> Registrarse </button>
+                </div>
+            </div>
+
+        </div>
+        <div id="prueba">
+
+        </div>
+        <footer class="text-center">
+                <a class="up-arrow" href="#Inicio" data-toggle="tooltip" title="TO TOP">
+                  <span class="glyphicon glyphicon-chevron-up"></span>
+                </a>
+                        <a href="http://www.mep.go.cr/educatico" target="_blank"> Ministerio de Educación Pública de Costa Rica / Departamento de GESPRO </a> <br>
+        </footer>
+
+        <div id="shadowAjax" class="div-shadow invisible">
+                <img class="img-ajax-loading" src="../../img/spinner.gif" alt="Loading">
+        </div>
+
+</body>
+</html>
